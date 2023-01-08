@@ -1,5 +1,4 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React from "react";import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../contexts/Products";
 
@@ -17,7 +16,7 @@ const ProductDetail = () => {
         <h1>{foundProduct.name}</h1>
         <a href={foundProduct.category.path} style={{ textDecoration: "none" }}>
           <h6 className="text-secondary">
-            Category: {foundProduct.category.text}
+            ประเภท: {foundProduct.category.text}
           </h6>
         </a>
       </div>

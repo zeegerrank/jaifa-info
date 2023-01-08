@@ -1,11 +1,12 @@
-const Products = [  {
+const Products = [
+  {
     id: 101,
-    name: "Iwate Charcoal",
+    name: "ถ่านไฟ อิวาเตะ",
     imgSrc: "https://via.placeholder.com/200x200",
     imgName: "test",
     category: {
       path: "/products/vegetables",
-      text: "Iwate Charcoal & Wood Vinegar",
+      text: "ถ่านไฟ และ น้ำส้มควันไม้",
     },
     useSage: [],
     benefits: [],
@@ -20,7 +21,7 @@ const Products = [  {
     imgName: "test",
     category: {
       path: "/products/vegetables",
-      text: "Iwate Charcoal & Wood Vinegar",
+      text: "ถ่านไฟ และ น้ำส้มควันไม้",
     },
     useSage: [],
     benefits: [],

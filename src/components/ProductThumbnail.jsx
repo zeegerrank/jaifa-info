@@ -27,7 +27,7 @@ const CardInformation = (props) => {
             href={"/products/" + foundProduct.category.path}
             style={{ textDecoration: "none" }}>
             <Card.Subtitle className="my-2 text-secondary">
-              Category: {foundProduct.category.text}
+              ประเภท: {foundProduct.category.text}
             </Card.Subtitle>
           </a>
 

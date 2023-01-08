@@ -1,5 +1,4 @@
-import React from "react";
-import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
+import React from "react";import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 
 const NavsBar = () => {
   return (
@@ -15,21 +14,21 @@ const NavsBar = () => {
               <Nav>
                 <NavDropdown
                   id="farm-products"
-                  title="Farm Products"
+                  title="สินค้าฟาร์ม"
                   menuVariant="transparent">
                   <NavDropdown.Item href="/products/vegetables">
-                    Vegetables
+                    ผัก
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/products/charcoal">
-                    Iwate Charcoal & Wood Vinegar
+                    ถ่านไฟ และ น้ำส้มควันไม้
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/products/fertilizer">
-                    Fertilizer
+                    ปุ๋ย
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/products">All</NavDropdown.Item>
+                  <NavDropdown.Item href="/products">ทั้งหมด</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
@@ -41,15 +40,15 @@ const NavsBar = () => {
                   title="Stories"
                   menuVariant="transparent">
                   <NavDropdown.Item href="/stories/vegetables">
-                    Vegetables
+                    ผัก
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/stories/vegetables">
-                    Iwate Charcoal & Wood Vinegar
+                  <NavDropdown.Item href="/stories/charcoal">
+                    ถ่านไฟ และ น้ำส้มควันไม้
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/stories/vegetables">
-                    Fertilizer
+                  <NavDropdown.Item href="/stories/fertilizer">
+                    ปุ๋ย
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>

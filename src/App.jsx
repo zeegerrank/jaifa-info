@@ -3,8 +3,8 @@ import "./App.css";
 import NavsBar from "./pages/Layouts/NavsBar";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
-import TestProduct from "./pages/Products/IwateCharcoal";
 import ProductGroup from "./components/ProductGroup";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element="" />
-          <Route path="/products/" element={<TestProduct />} />
+          <Route path="/products/" element="" />
           <Route path="/products/:category" element={<ProductGroup />} />
           <Route path="/product/:productId" element={<Product />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       {/* Footer here */}
