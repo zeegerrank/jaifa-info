@@ -13,9 +13,13 @@ const ProductDetail = () => {
 
   return (
     <Container className="pt-3">
-      <div className=" text-center">
+      <div className=" text-center mb-3">
         <h1>{foundProduct.name}</h1>
-        <h6 className="text-secondary">Sub</h6>
+        <a href={foundProduct.category.path} style={{ textDecoration: "none" }}>
+          <h6 className="text-secondary">
+            Category: {foundProduct.category.text}
+          </h6>
+        </a>
       </div>
 
       <div className="d-flex justify-content-around">
@@ -31,14 +35,9 @@ const ProductDetail = () => {
         />
       </div>
 
-      <p style={{ textIndent: "50px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id obcaecati
-        quam quasi accusamus! Maxime quo consectetur, quibusdam sunt
-        consequuntur dicta est, reprehenderit saepe nemo, ipsa maiores nostrum
-        iure deleniti voluptatibus sapiente quisquam esse. Ea laboriosam,
-        necessitatibus quaerat autem fugiat perferendis nemo repellat, ratione
-        voluptate atque, ad nobis minima iure possimus!
-      </p>
+      <p style={{ textIndent: "50px" }}>{foundProduct.description.intro}</p>
+      <p style={{ textIndent: "50px" }}>{foundProduct.description.body}</p>
+      <p style={{ textIndent: "50px" }}>{foundProduct.description.conclude}</p>
     </Container>
   );
 };

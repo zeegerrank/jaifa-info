@@ -1,5 +1,4 @@
-import React from "react";
-import { Card, Container } from "react-bootstrap";
+import React from "react";import { Card, Container } from "react-bootstrap";
 import Products from "../contexts/Products";
 
 const CardInformation = (props) => {
@@ -12,7 +11,7 @@ const CardInformation = (props) => {
 
   return (
     <Container>
-      <Card className="w-25">
+      <Card className="">
         <a href={"/product/" + foundProduct.id}>
           <Card.Img src={foundProduct.imgSrc} alt={foundProduct.imgName} />
         </a>

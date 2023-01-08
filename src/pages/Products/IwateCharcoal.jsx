@@ -1,9 +1,9 @@
-import React from "react";import CardInformation from "../../components/ProductThumbnail";
+import React from "react";import ProductGroup from "../../components/ProductGroup";
 
 const IwateCharcoal = () => {
   return (
     <div>
-      <CardInformation productName="Iwate Charcoal" />
+      <ProductGroup category="Iwate Charcoal & Wood Vinegar" />
     </div>
   );
 };
