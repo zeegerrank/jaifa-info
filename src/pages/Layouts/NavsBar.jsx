@@ -5,13 +5,15 @@ const NavsBar = () => {
   return (
     <div>
       {/* NavsBar */}
-      <Navbar className="mb-3" bg="primary" variant="dark">
+      <Navbar className="mb-3" bg="primary" variant="dark" expand="md">
         <Container>
           <Navbar.Brand href="/">JAIFA SOCIAL ENTERPRISE</Navbar.Brand>
-          <Nav className="justify-content-end">
-            <Nav.Link href="/">Home</Nav.Link>
-            {/* Farm Products Dropdown */}
-            <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Toggle />
+
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="justify-content-end">
+              <Nav.Link href="/">Home</Nav.Link>
+              {/* Farm Products Dropdown */}
               <Nav>
                 <NavDropdown
                   id="farm-products"
@@ -36,9 +38,9 @@ const NavsBar = () => {
                   <NavDropdown.Item href="/products">ทั้งหมด</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-            </Navbar.Collapse>
-            {/* Stories Dropdown Future plan*/}
-            {/* <Navbar.Collapse id="stories">
+
+              {/* Stories Dropdown Future plan*/}
+
               <Nav>
                 <NavDropdown
                   id="stories"
@@ -57,11 +59,12 @@ const NavsBar = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-            </Navbar.Collapse> */}
-            {/* <Nav.Link href="/academy">Academy</Nav.Link> */}
-            <Nav.Link href="/about-us">About Us</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-          </Nav>
+
+              {/* <Nav.Link href="/academy">Academy</Nav.Link> */}
+              <Nav.Link href="/about-us">About Us</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </div>
