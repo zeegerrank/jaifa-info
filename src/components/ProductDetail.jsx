@@ -1,4 +1,4 @@
-import React from "react";import { Container } from "react-bootstrap";
+import React from "react";import { Container, Carousel } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../contexts/Products";
 
@@ -21,18 +21,24 @@ const ProductDetail = () => {
         </a>
       </div>
 
-      <div className="d-flex justify-content-around">
-        <img
-          className="rounded"
-          src={foundProduct.imgSrc}
-          alt={foundProduct.imgName}
-        />
-        <img
-          className="rounded"
-          src={foundProduct.imgSrc}
-          alt={foundProduct.imgName}
-        />
-      </div>
+      <Container className="w-50">
+        <Carousel className="carousel mx-auto" variant="dark">
+          <Carousel.Item>
+            <img
+              className="carouselInner "
+              src={foundProduct.imgSrc[0]}
+              alt={foundProduct.imgName}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="carouselInner "
+              src={foundProduct.imgSrc[1]}
+              alt={foundProduct.imgName}
+            />
+          </Carousel.Item>
+        </Carousel>
+      </Container>
 
       <p style={{ textIndent: "50px" }}>{foundProduct.description.intro}</p>
       <p style={{ textIndent: "50px" }}>{foundProduct.description.body}</p>

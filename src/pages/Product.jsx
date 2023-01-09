@@ -1,10 +1,12 @@
-import React from "react";import ProductDetail from "../components/ProductDetail";
+import React from "react";
+import { Container } from "react-bootstrap";
+import ProductDetail from "../components/ProductDetail";
 
 const Product = () => {
   return (
-    <div>
+    <Container>
       <ProductDetail />
-    </div>
+    </Container>
   );
 };
 

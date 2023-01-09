@@ -1,11 +1,9 @@
-import { Container } from "react-bootstrap";
-import { useParams } from "react-router-dom";
-import Products from "../contexts/Products";
+import { Container } from "react-bootstrap";import Products from "../contexts/Products";
 import ProductThumbnail from "./ProductThumbnail";
-const ProductGroup = () => {
-  // Receive param to call in data
-  const { category } = useParams();
-  const pathName = "/products/" + category;
+const ProductsGetAll = (props) => {
+  // get path name from props
+  const pathName = props.pathNameReq;
+
   // Filter Products by category
   const filteredProducts = Products.filter(
     (productGroup) => productGroup.category.path === pathName
@@ -13,7 +11,9 @@ const ProductGroup = () => {
 
   // List found product in thumbnail
   const listProductFound = filteredProducts.map((products) => (
-    <ProductThumbnail key={products.id} productName={products.name} />
+    <div>
+      <ProductThumbnail key={products.id} productName={products.name} />
+    </div>
   ));
 
   // find product category name
@@ -25,9 +25,9 @@ const ProductGroup = () => {
   return (
     <Container>
       <h3 className="mb-3">{getCategoryName}</h3>
-      <Container className="d-flex">{listProductFound}</Container>;
+      <div className="d-flex">{listProductFound}</div>
     </Container>
   );
 };
 
-export default ProductGroup;
+export default ProductsGetAll;

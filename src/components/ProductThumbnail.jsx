@@ -13,7 +13,11 @@ const CardInformation = (props) => {
     <Container>
       <Card className="">
         <a href={"/product/" + foundProduct.id}>
-          <Card.Img src={foundProduct.imgSrc} alt={foundProduct.imgName} />
+          <Card.Img
+            className=""
+            src={foundProduct.imgSrc[0]}
+            alt={foundProduct.imgName}
+          />
         </a>
 
         <Card.Body>

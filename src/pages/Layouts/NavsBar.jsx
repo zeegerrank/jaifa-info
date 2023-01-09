@@ -1,4 +1,5 @@
-import React from "react";import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
+import React from "react";
+import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 
 const NavsBar = () => {
   return (
@@ -10,14 +11,18 @@ const NavsBar = () => {
           <Nav className="justify-content-end">
             <Nav.Link href="/">Home</Nav.Link>
             {/* Farm Products Dropdown */}
-            <Navbar.Collapse id="farm-products">
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav>
                 <NavDropdown
                   id="farm-products"
                   title="สินค้าฟาร์ม"
                   menuVariant="transparent">
+                  <NavDropdown.Item href="/products/salads">
+                    ผักสลัด
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
                   <NavDropdown.Item href="/products/vegetables">
-                    ผัก
+                    ผักอื่นๆ
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/products/charcoal">
@@ -32,8 +37,8 @@ const NavsBar = () => {
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
-            {/* Stories Dropdown */}
-            <Navbar.Collapse id="stories">
+            {/* Stories Dropdown Future plan*/}
+            {/* <Navbar.Collapse id="stories">
               <Nav>
                 <NavDropdown
                   id="stories"
@@ -52,8 +57,8 @@ const NavsBar = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
-            </Navbar.Collapse>
-            <Nav.Link href="/academy">Academy</Nav.Link>
+            </Navbar.Collapse> */}
+            {/* <Nav.Link href="/academy">Academy</Nav.Link> */}
             <Nav.Link href="/about-us">About Us</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
