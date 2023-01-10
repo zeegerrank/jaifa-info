@@ -1,4 +1,5 @@
-import React from "react";import { Container, Carousel } from "react-bootstrap";
+import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../contexts/Products";
 
@@ -20,29 +21,26 @@ const ProductDetail = () => {
           </h6>
         </a>
       </div>
-
-      <Container className="w-50">
-        <Carousel className="carousel mx-auto" variant="dark">
-          <Carousel.Item>
+      <Container>
+        <Row className="justify-content-center">
+          <Col lg={5} md={10} className="mb-3">
             <img
-              className="carouselInner "
+              className="img-fluid"
               src={foundProduct.imgSrc[0]}
               alt={foundProduct.imgName}
             />
-          </Carousel.Item>
-          <Carousel.Item>
+          </Col>
+          <Col lg={5} md={10} className="mb-3">
             <img
-              className="carouselInner "
+              className="img-fluid"
               src={foundProduct.imgSrc[1]}
               alt={foundProduct.imgName}
             />
-          </Carousel.Item>
-        </Carousel>
+          </Col>
+        </Row>
       </Container>
 
       <p style={{ textIndent: "50px" }}>{foundProduct.description.intro}</p>
-      <p style={{ textIndent: "50px" }}>{foundProduct.description.body}</p>
-      <p style={{ textIndent: "50px" }}>{foundProduct.description.conclude}</p>
     </Container>
   );
 };

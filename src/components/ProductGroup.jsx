@@ -25,7 +25,7 @@ const ProductGroup = () => {
   return (
     <Container>
       <h3 className="mb-3">{getCategoryName}</h3>
-      <Container className="d-flex">{listProductFound}</Container>;
+      <Container className="row">{listProductFound}</Container>;
     </Container>
   );
 };
