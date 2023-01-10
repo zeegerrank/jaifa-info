@@ -12,7 +12,7 @@ const ProductDetail = () => {
   const foundProduct = findProductById(productId);
 
   return (
-    <Container className="pt-3">
+    <Container className="pt-1">
       <div className=" text-center mb-3">
         <h1>{foundProduct.name}</h1>
         <a href={foundProduct.category.path} style={{ textDecoration: "none" }}>
@@ -22,25 +22,33 @@ const ProductDetail = () => {
         </a>
       </div>
       <Container>
-        <Row className="justify-content-center">
-          <Col lg={5} md={10} className="mb-3">
-            <img
-              className="img-fluid"
-              src={foundProduct.imgSrc[0]}
-              alt={foundProduct.imgName}
-            />
+        <Row className="justify-content-lg-around justify-content-md-center">
+          <Col lg={4} md={6} className="">
+            <Col md={12} className="mb-3">
+              <img
+                className="img-fluid"
+                src={foundProduct.imgSrc[0]}
+                alt={foundProduct.imgName}
+              />
+            </Col>
+            <Col md={12} className="mb-3">
+              <img
+                className="img-fluid"
+                src={foundProduct.imgSrc[1]}
+                alt={foundProduct.imgName}
+              />
+            </Col>
           </Col>
-          <Col lg={5} md={10} className="mb-3">
-            <img
-              className="img-fluid"
-              src={foundProduct.imgSrc[1]}
-              alt={foundProduct.imgName}
-            />
+          <Col
+            lg={6}
+            md={6}
+            className="align-self-md-center align-self-lg-start mt-lg-5">
+            <p style={{ textIndent: "50px" }}>
+              {foundProduct.description.intro}
+            </p>
           </Col>
         </Row>
       </Container>
-
-      <p style={{ textIndent: "50px" }}>{foundProduct.description.intro}</p>
     </Container>
   );
 };
