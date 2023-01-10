@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../contexts/Products";
 import ProductThumbnail from "./ProductThumbnail";
@@ -24,8 +24,10 @@ const ProductGroup = () => {
 
   return (
     <Container>
-      <h3 className="mb-3">{getCategoryName}</h3>
-      <Container className="row">{listProductFound}</Container>;
+      <h3 className="text-lg-start text-sm-center mb-3 ">{getCategoryName}</h3>
+      <Row className="justify-content-lg-start justify-content-center">
+        {listProductFound}
+      </Row>
     </Container>
   );
 };
