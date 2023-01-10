@@ -30,7 +30,7 @@ const NavsBar = () => {
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/products/charcoal">
-                    ถ่านไฟ และ น้ำส้มควันไม้
+                    ถ่านไฟ และน้ำส้มควันไม้
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/products/fertilizer">
