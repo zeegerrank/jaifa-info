@@ -10,8 +10,10 @@ const NavsBar = () => {
           <Navbar.Brand href="/">JAIFA SOCIAL ENTERPRISE</Navbar.Brand>
           <Navbar.Toggle />
 
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="justify-content-end">
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end">
+            <Nav className="">
               <Nav.Link href="/">Home</Nav.Link>
               {/* Farm Products Dropdown */}
               <Nav>
@@ -41,7 +43,7 @@ const NavsBar = () => {
 
               {/* Stories Dropdown Future plan*/}
 
-              <Nav>
+              {/* <Nav>
                 <NavDropdown
                   id="stories"
                   title="Stories"
@@ -58,7 +60,7 @@ const NavsBar = () => {
                     ปุ๋ย
                   </NavDropdown.Item>
                 </NavDropdown>
-              </Nav>
+              </Nav> */}
 
               {/* <Nav.Link href="/academy">Academy</Nav.Link> */}
               <Nav.Link href="/about-us">About Us</Nav.Link>

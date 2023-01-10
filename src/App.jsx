@@ -6,6 +6,7 @@ import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
 import ProductsAll from "./pages/ProductsAll";
 import ProductCategory from "./pages/ProductCategory";
+import { Footer } from "./pages/Layouts/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       {/* Footer here */}
+      <Footer />
     </>
   );
 }
