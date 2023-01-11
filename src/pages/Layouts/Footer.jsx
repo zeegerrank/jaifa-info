@@ -12,13 +12,13 @@ export const Footer = () => {
         style={{ backgroundColor: "#75D9FD" }}>
         <Container>
           <Stack className="">
-            <Row className="mt-2 justify-content-evenly">
-              <Col xs={1} className="text-center ">
+            <Row className="mt-2 justify-content-center">
+              <Col xs={2} className="text-center ">
                 <i
                   style={{ color: "#13F21B" }}
                   class="fa-3x fa-brands fa-line"></i>
               </Col>
-              <Col xs={1} className="text-center ">
+              <Col xs={2} className="text-center ">
                 <a href="https://www.facebook.com/jaifafarm">
                   <i
                     style={{ color: "#0914D6" }}

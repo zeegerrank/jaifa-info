@@ -7,7 +7,7 @@ const NavsBar = () => {
       {/* NavsBar */}
       <Navbar className="mb-3" bg="primary" variant="dark" expand="md">
         <Container>
-          <Navbar.Brand href="/">JAIFA SOCIAL ENTERPRISE</Navbar.Brand>
+          <Navbar.Brand href="/">JAIFA FARM</Navbar.Brand>
           <Navbar.Toggle />
 
           <Navbar.Collapse
