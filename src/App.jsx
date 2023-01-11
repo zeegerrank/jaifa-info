@@ -8,6 +8,7 @@ import ProductsAll from "./pages/ProductsAll";
 import ProductCategory from "./pages/ProductCategory";
 import { Footer } from "./pages/Layouts/Footer";
 import MessengerPlugin from "./pages/Layouts/MessengerPlugin";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/products/:category" element={<ProductCategory />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/*" element={<NotFound />} />
+          <Route path="/contact/" element={<Contact />} />
         </Routes>
       </BrowserRouter>
       {/* Footer here */}

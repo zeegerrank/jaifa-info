@@ -1,8 +1,13 @@
-import React from "react";import { Container } from "react-bootstrap";
+import React from "react";
+import { Container } from "react-bootstrap";
 import ProductDetail from "../components/ProductDetail";
 
 const Product = () => {
-  return <ProductDetail />;
+  return (
+    <>
+      <ProductDetail />
+    </>
+  );
 };
 
 export default Product;
