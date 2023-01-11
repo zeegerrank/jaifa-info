@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import ProductsAll from "./pages/ProductsAll";
 import ProductCategory from "./pages/ProductCategory";
 import { Footer } from "./pages/Layouts/Footer";
+import MessengerPlugin from "./pages/Layouts/MessengerPlugin";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       </BrowserRouter>
       {/* Footer here */}
       <Footer />
+      <MessengerPlugin />
     </>
   );
 }
