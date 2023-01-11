@@ -97,8 +97,29 @@ export const Footer = () => {
                 className="col d-lg-none d-block my-3 mx-auto rounded-2 w-75 "
                 style={{ height: "2px", backgroundColor: "#5D8CE2" }}
               />
-
-              <Col className="text-center">Contact</Col>
+              <Col>
+                <h6
+                  className="text-center mb-3"
+                  style={{ textDecoration: "underline" }}>
+                  Contact
+                </h6>
+                <div className="text-center">
+                  <p>
+                    <i class="fa-solid fa-location-crosshairs"></i>Click! Google
+                    Map
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    Address: 125/6 หมู่ 6 ตำบลนิคมสร้างตนเอง อำเภอเมืองลพบุรี
+                    จังหวัดลพบุรี 15000
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-phone"></i>
+                    Tel: 087-662-6644 <br />
+                  </p>
+                </div>
+              </Col>
+              <Col></Col>
             </Row>
             <span
               className="my-3 rounded-1 w-100"
