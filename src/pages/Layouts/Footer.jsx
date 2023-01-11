@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";import React from "react";
 import { Container, Navbar, Row, Col, Stack, Nav } from "react-bootstrap";
 
 export const Footer = () => {
@@ -14,15 +13,24 @@ export const Footer = () => {
           <Stack className="">
             <Row className="mt-2 justify-content-center">
               <Col xs={2} className="text-center ">
-                <i
-                  style={{ color: "#13F21B" }}
-                  class="fa-3x fa-brands fa-line"></i>
+                <a href="https://lin.ee/zrShn6r">
+                  <i
+                    style={{ color: "#13F21B" }}
+                    class="fa-3x fa-brands fa-line"></i>
+                </a>
               </Col>
               <Col xs={2} className="text-center ">
                 <a href="https://www.facebook.com/jaifafarm">
                   <i
                     style={{ color: "#0914D6" }}
                     class=" fa-3x fa-brands fa-facebook"></i>
+                </a>
+              </Col>
+              <Col xs={2} className="text-center ">
+                <a href="https://m.me/1731864903746911">
+                  <i
+                    style={{ color: "#15E8C8" }}
+                    class=" fa-3x fa-brands fa-facebook-messenger"></i>
                 </a>
               </Col>
             </Row>
