@@ -1,4 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import { Container, Navbar, Row, Col, Stack, Nav } from "react-bootstrap";
 
 export const Footer = () => {
@@ -103,10 +104,14 @@ export const Footer = () => {
                   style={{ textDecoration: "underline" }}>
                   Contact
                 </h6>
-                <div className="text-center">
+                <div className="text-center text-lg-start mx-lg-4">
                   <p>
-                    <i class="fa-solid fa-location-crosshairs"></i>Click! Google
-                    Map
+                    <a
+                      style={{ color: "#28252A", textDecoration: "none" }}
+                      href="https://goo.gl/maps/wFSrUUAazohmPBj6A">
+                      <i class="fa-solid fa-location-crosshairs"></i>Click!
+                      Google Map
+                    </a>
                   </p>
                   <p>
                     <i class="fa-solid fa-map-location-dot"></i>

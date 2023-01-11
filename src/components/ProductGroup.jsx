@@ -25,7 +25,7 @@ const ProductGroup = () => {
   return (
     <Container>
       <h3 className="text-center text-md-start mb-3 ">{getCategoryName}</h3>
-      <Row className="justify-content-lg-start justify-content-center">
+      <Row className="justify-content-md-start justify-content-center">
         {listProductFound}
       </Row>
     </Container>

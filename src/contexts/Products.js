@@ -1,4 +1,5 @@
-const Products = [  {
+const Products = [
+  {
     id: 101,
     name: "ถ่านไฟ อิวาเตะ",
     imgSrc: [
@@ -44,7 +45,7 @@ const Products = [  {
     imgName: "test",
     category: {
       path: "/products/vegetables",
-      text: "ถ่านไฟ และ น้ำส้มควันไม้",
+      text: "ผักอื่นๆ",
     },
     useSage: [],
     benefits: [],
@@ -59,7 +60,7 @@ const Products = [  {
     imgName: "test",
     category: {
       path: "/products/fertilizer",
-      text: "ถ่านไฟ และ น้ำส้มควันไม้",
+      text: "ปุ๋ย",
     },
     useSage: [],
     benefits: [],
@@ -74,7 +75,7 @@ const Products = [  {
     imgName: "test",
     category: {
       path: "/products/salads",
-      text: "ถ่านไฟ และ น้ำส้มควันไม้",
+      text: "ผักสลัด",
     },
     useSage: [],
     benefits: [],

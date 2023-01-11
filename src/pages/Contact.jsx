@@ -1,4 +1,5 @@
-import React from "react";import { Container, Row, Col, Stack } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Stack } from "react-bootstrap";
 import Map from "../components/Map";
 
 const Contact = () => {
@@ -6,7 +7,7 @@ const Contact = () => {
     <Container className="my-3">
       <Row className="">
         <Col sm={{ order: "first" }} xs={{ order: "last" }}>
-          <h3 className="d-lg-block d-md-none mb-3">Navigate to Jaifa Farm</h3>
+          <h3 className="d-lg-block d-none mb-3">Navigate to Jaifa Farm</h3>
           <Map className="" size="s" />
         </Col>
         <Col className="text-center text-sm-start mt-md-4">

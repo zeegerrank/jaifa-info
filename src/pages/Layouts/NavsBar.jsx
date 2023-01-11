@@ -1,11 +1,32 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 
 const NavsBar = () => {
+  const trackPage = () => {
+    for (let i = 0; i < document.links.length; i++) {
+      if (
+        document.links[i].href === document.URL &&
+        document.links[i].className === "dropdown-item"
+      ) {
+        let currentLink = document.links[i];
+        currentLink.className = "dropdown-item active";
+      }
+    }
+  };
+
+  useEffect(() => {
+    trackPage();
+  }, []);
+
   return (
     <div>
       {/* NavsBar */}
-      <Navbar className="mb-3" bg="primary" variant="dark" expand="md">
+      <Navbar
+        onClick={trackPage}
+        className="mb-3"
+        bg="primary"
+        variant="dark"
+        expand="md">
         <Container>
           <Navbar.Brand href="/">JAIFA FARM</Navbar.Brand>
           <Navbar.Toggle />
@@ -21,22 +42,26 @@ const NavsBar = () => {
                   id="farm-products"
                   title="สินค้าฟาร์ม"
                   menuVariant="transparent">
-                  <NavDropdown.Item href="/products/salads">
+                  <NavDropdown.Item
+                    className={
+                      document.links.href === document.URL ? "active" : ""
+                    }
+                    href="/products/salads">
                     ผักสลัด
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
+
                   <NavDropdown.Item href="/products/vegetables">
                     ผักอื่นๆ
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
+
                   <NavDropdown.Item href="/products/charcoal">
                     ถ่านไฟ และน้ำส้มควันไม้
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
+
                   <NavDropdown.Item href="/products/fertilizer">
                     ปุ๋ย
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
+
                   <NavDropdown.Item href="/products">ทั้งหมด</NavDropdown.Item>
                 </NavDropdown>
               </Nav>

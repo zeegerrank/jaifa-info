@@ -27,7 +27,7 @@ function App() {
       </BrowserRouter>
       {/* Footer here */}
       <Footer />
-      <MessengerPlugin />
+      {/* <MessengerPlugin /> */}
     </>
   );
 }
