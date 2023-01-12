@@ -12,7 +12,7 @@ export const Footer = () => {
         style={{ backgroundColor: "#75D9FD" }}>
         <Container>
           <Stack className="">
-            <Row className="mt-2 justify-content-center">
+            <Row className="mt-2 justify-content-around justify-content-lg-center">
               <Col xs={2} className="text-center ">
                 <a href="https://lin.ee/zrShn6r">
                   <i

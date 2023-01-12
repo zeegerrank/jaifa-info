@@ -5,9 +5,10 @@ import Products from "../contexts/Products";
 
 const ProductDetail = () => {
   // Detect used param
-  let { productId } = useParams;
+  let { productId } = useParams();
 
-  const findProductById = (prodId) => Products.find(({ Id }) => Id === prodId);
+  const findProductById = (prodId) =>
+    Products.find((prod) => prod.id == prodId);
 
   const foundProduct = findProductById(productId);
 
@@ -42,9 +43,9 @@ const ProductDetail = () => {
           <Col
             lg={6}
             md={6}
-            className="align-self-md-center align-self-lg-start mt-lg-5">
-            <p style={{ textIndent: "50px" }}>
-              {foundProduct.description.intro}
+            className="align-self-md-center justify-content-md-center align-self-lg-start mt-lg-5">
+            <p style={{ textIndent: "45px" }}>
+              {foundProduct.description.short}
             </p>
           </Col>
         </Row>

@@ -1,5 +1,4 @@
-import React from "react";
-import { Card, Col, Row, Container } from "react-bootstrap";
+import React from "react";import { Card, Col, Row, Container } from "react-bootstrap";
 import Products from "../contexts/Products";
 
 const CardInformation = (props) => {
