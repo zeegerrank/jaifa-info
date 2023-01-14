@@ -1,5 +1,6 @@
-import React from "react";import { Card, Col, Row, Container } from "react-bootstrap";
-import Products from "../contexts/Products";
+import React from "react";
+import { Card, Col, Row, Container } from "react-bootstrap";
+import Products from "../data/Products";
 
 const CardInformation = (props) => {
   // find product object in Products array inside context by name
@@ -10,7 +11,7 @@ const CardInformation = (props) => {
   const foundProduct = findProductByName(props.productName);
 
   return (
-    <Col lg={4} md={6} sm={12}>
+    <Col lg={3} md={4} sm={12}>
       <Card className="mb-3">
         <a href={"/product/" + foundProduct.id}>
           <Card.Img
@@ -24,7 +25,10 @@ const CardInformation = (props) => {
           <a
             href={"/product/" + foundProduct.id}
             style={{ textDecoration: "none" }}>
-            <Card.Title className="my-1">{foundProduct.name}</Card.Title>
+            <h2 className="my-1 card-title d-md-none">{foundProduct.name}</h2>
+            <p className="my-1 card-title d-none d-md-flex">
+              {foundProduct.name}
+            </p>
           </a>
 
           <a

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import Products from "../contexts/Products";
+import Products from "../data/Products";
 
 const ProductDetail = () => {
   // Detect used param
@@ -24,7 +24,7 @@ const ProductDetail = () => {
       </div>
       <Container>
         <Row className="justify-content-lg-around justify-content-md-center">
-          <Col lg={4} md={6} className="">
+          <Col lg={4} md={6} className="text-center text-md-start text-lg-end">
             <Col md={12} className="mb-3">
               <img
                 className="img-fluid"
@@ -45,7 +45,7 @@ const ProductDetail = () => {
             md={6}
             className="align-self-md-center justify-content-md-center align-self-lg-start mt-lg-5">
             <p style={{ textIndent: "45px" }}>
-              {foundProduct.description.short}
+              {foundProduct.description.main}
             </p>
           </Col>
         </Row>
@@ -53,5 +53,4 @@ const ProductDetail = () => {
     </Container>
   );
 };
-
 export default ProductDetail;
