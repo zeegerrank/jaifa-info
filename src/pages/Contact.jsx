@@ -1,10 +1,9 @@
-import React from "react";
-import { Container, Row, Col, Stack } from "react-bootstrap";
+import React from "react";import { Container, Row, Col, Stack } from "react-bootstrap";
 import Map from "../components/Map";
 
 const Contact = () => {
   return (
-    <Container className="my-3">
+    <Container className="my-5">
       <Row className="">
         <Col sm={{ order: "first" }} xs={{ order: "last" }}>
           <h3 className="d-lg-block d-none mb-3">Navigate to Jaifa Farm</h3>

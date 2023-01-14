@@ -1,5 +1,4 @@
-import React from "react";
-import { Row, Col } from "react-bootstrap";
+import React from "react";import { Row, Col } from "react-bootstrap";
 import Articles from "../data/Articles";
 const Article = (props) => {
   const findArticleByName = Articles.find((ac) => ac.name === props.Name);
@@ -13,11 +12,11 @@ const Article = (props) => {
           </div>
 
           <img
-            className="img-fluid  float-lg-end px-lg-4"
-            src={findArticleByName.img}
+            className="img-fluid text-lg-center pt-md-3"
+            src={findArticleByName.img[0]}
           />
         </Col>
-        <Col className="mt-3 px-3 px-md-0 d-lg-flex align-items-lg-center">
+        <Col className="mt-3 px-3 px-md-3 d-lg-flex align-items-lg-center">
           <Col>
             <div className=" d-none d-md-block text-md-start">
               <h4>{findArticleByName.header}</h4>
