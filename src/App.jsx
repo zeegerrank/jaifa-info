@@ -13,7 +13,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <>
-      {/* <NavsBar /> */}
+      <NavsBar />
       {/* App Routes */}
       <BrowserRouter>
         <Routes>
