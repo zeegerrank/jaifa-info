@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../data/Products";
+import HomeButton from "./Buttons/HomeButton";
 
 const ProductDetail = () => {
   // Detect used param
@@ -13,16 +14,19 @@ const ProductDetail = () => {
   const foundProduct = findProductById(productId);
 
   return (
-    <Container className="pt-1">
-      <div className=" text-center mb-3">
-        <h1>{foundProduct.name}</h1>
-        <a href={foundProduct.category.path} style={{ textDecoration: "none" }}>
-          <h6 className="text-secondary">
-            ประเภท: {foundProduct.category.text}
-          </h6>
-        </a>
-      </div>
-      <Container>
+    <>
+      <Container className="pt-1">
+        <div className=" text-center mb-3">
+          <h1>{foundProduct.name}</h1>
+          <a
+            href={foundProduct.category.path}
+            style={{ textDecoration: "none" }}>
+            <h6 className="text-secondary">
+              ประเภท: {foundProduct.category.text}
+            </h6>
+          </a>
+        </div>
+
         <Row className="justify-content-lg-around justify-content-md-center">
           <Col lg={4} md={6} className="text-center text-md-start text-lg-end">
             <Col md={12} className="mb-3">
@@ -49,8 +53,12 @@ const ProductDetail = () => {
             </p>
           </Col>
         </Row>
+        <span className="d-flex">
+          <span className="w-75"></span>
+          <HomeButton className="" />
+        </span>
       </Container>
-    </Container>
+    </>
   );
 };
 export default ProductDetail;
