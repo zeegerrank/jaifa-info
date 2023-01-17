@@ -1,7 +1,8 @@
-import { Carousel, Container, Row } from "react-bootstrap";
+import { Carousel, Container, Row, Button, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../data/Products";
 import ProductThumbnail from "./ProductThumbnail";
+import ScrollTopButton from "../components/ScrollTopButton";
 
 const ProductGroup = () => {
   // Receive param to call in data
@@ -70,6 +71,13 @@ const ProductGroup = () => {
               </Carousel.Item>
             ))}
           </Carousel>
+        </Row>
+        <Row className="text-end mb-3 mt-3 text-md-center">
+          <Col className="order-last">
+            <Button id="call-for-action" href="">
+              ดูสินค้าทั้งหมด
+            </Button>
+          </Col>
         </Row>
       </div>
     </Container>

@@ -1,11 +1,10 @@
-import { Container, Row, Carousel } from "react-bootstrap";import Products from "../data/Products";
+import { Container, Row, Carousel, Col } from "react-bootstrap";import Products from "../data/Products";
 import ProductThumbnail from "./ProductThumbnail";
+import ScrollTopButton from "./ScrollTopButton";
 const ProductsGetAll = (props) => {
   // Receive param to call in data
   // const category = props.pathNameReq;
   const pathName = props.pathNameReq;
-
-  console.log("🚀 -> pathName", pathName);
 
   // Filter Products by category
   const filteredProducts = Products.filter(
@@ -70,6 +69,9 @@ const ProductsGetAll = (props) => {
             ))}
           </Carousel>
         </Row>
+        <div className=" text-center">
+          <ScrollTopButton />
+        </div>
       </div>
     </Container>
   );

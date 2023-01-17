@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";import React from "react";
+import React from "react";
 import { Container, Navbar, Row, Col, Stack, Nav } from "react-bootstrap";
-
 export const Footer = () => {
   return (
     <Navbar

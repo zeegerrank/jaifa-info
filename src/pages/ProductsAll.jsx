@@ -1,6 +1,4 @@
-import React from "react";
-import ProductsGetAll from "../components/ProductsGetAll";
-
+import React from "react";import ProductsGetAll from "../components/ProductsGetAll";
 const ProductsAll = () => {
   return (
     <>

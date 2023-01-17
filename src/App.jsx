@@ -9,6 +9,7 @@ import ProductCategory from "./pages/ProductCategory";
 import { Footer } from "./pages/Layouts/Footer";
 import MessengerPlugin from "./pages/Layouts/MessengerPlugin";
 import Contact from "./pages/Contact";
+import ScrollTopButton from "./components/ScrollTopButton";
 
 function App() {
   return (
