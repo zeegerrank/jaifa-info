@@ -88,9 +88,7 @@ const NavsBar = () => {
               </Nav> */}
 
               {/* <Nav.Link href="/academy">Academy</Nav.Link> */}
-              <Nav.Link disabled href="/about-us">
-                About Us
-              </Nav.Link>
+              <Nav.Link href="/about-us">About Us</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -1,5 +1,4 @@
-import React from "react";
-import { Card, Col, Row, Container } from "react-bootstrap";
+import React from "react";import { Card, Col, Row, Container } from "react-bootstrap";
 import Products from "../data/Products";
 
 const CardInformation = (props) => {
@@ -32,7 +31,7 @@ const CardInformation = (props) => {
           </a>
 
           <a
-            href={"/products/" + foundProduct.category.path}
+            href={foundProduct.category.path}
             style={{ textDecoration: "none" }}>
             <Card.Subtitle className="my-2 text-secondary">
               ประเภท: {foundProduct.category.text}

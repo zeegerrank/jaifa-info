@@ -9,7 +9,7 @@ import ProductCategory from "./pages/ProductCategory";
 import { Footer } from "./pages/Layouts/Footer";
 import MessengerPlugin from "./pages/Layouts/MessengerPlugin";
 import Contact from "./pages/Contact";
-import ScrollTopButton from "./components/ScrollTopButton";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/product/:productId" element={<Product />} />
           <Route path="/*" element={<NotFound />} />
           <Route path="/contact/" element={<Contact />} />
+          <Route path="/about-us/" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
       {/* Footer here */}

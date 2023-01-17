@@ -74,7 +74,7 @@ const ProductGroup = () => {
         </Row>
         <Row className="text-end mb-3 mt-3 text-md-center">
           <Col className="order-last">
-            <Button id="call-for-action" href="">
+            <Button id="call-for-action" href="/products">
               ดูสินค้าทั้งหมด
             </Button>
           </Col>

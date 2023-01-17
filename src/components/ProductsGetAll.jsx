@@ -1,4 +1,5 @@
-import { Container, Row, Carousel, Col } from "react-bootstrap";import Products from "../data/Products";
+import { Container, Row, Carousel, Col } from "react-bootstrap";
+import Products from "../data/Products";
 import ProductThumbnail from "./ProductThumbnail";
 import ScrollTopButton from "./ScrollTopButton";
 const ProductsGetAll = (props) => {
@@ -25,12 +26,15 @@ const ProductsGetAll = (props) => {
   return (
     <Container className="mb-3">
       <div>
-        <h3 className="d-none d-md-flex text-center text-md-start text-decoration-underline text-secondary">
-          ประเภท: {getCategoryName}
-        </h3>
-        <h5 className="d-none d-md-flex mb-3 text-secondary  text-center text-md-start">
-          {`(จำนวน ${filteredProducts.length} )`}
-        </h5>
+        <a href={foundCategory.category.path} className="text-decoration-none">
+          <h3 className="d-none d-md-flex text-center text-md-start text-decoration-underline text-secondary">
+            ประเภท: {getCategoryName}
+          </h3>
+          <p className="d-none d-md-flex mb-3 text-secondary  text-center text-md-start">
+            {`(จำนวน ${filteredProducts.length} )`}
+          </p>
+        </a>
+
         <Row className="justify-content-md-start justify-content-center d-md-flex d-none">
           {listProductsFound}
         </Row>

@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../data/Products";
-import HomeButton from "./Buttons/HomeButton";
 
 const ProductDetail = () => {
   // Detect used param
@@ -51,12 +50,19 @@ const ProductDetail = () => {
             <p style={{ textIndent: "45px" }}>
               {foundProduct.description.main}
             </p>
+            <div className="text-center mb-2 text-md-end">
+              <Button
+                href={foundProduct.category.path}
+                className=" mx-2"
+                style={{ background: "#4ED647", border: "none" }}>
+                ดู {foundProduct.category.text} ทั้งหมด
+              </Button>
+              <Button href="/" className="">
+                To Home
+              </Button>
+            </div>
           </Col>
         </Row>
-        <span className="d-flex">
-          <span className="w-75"></span>
-          <HomeButton className="" />
-        </span>
       </Container>
     </>
   );
