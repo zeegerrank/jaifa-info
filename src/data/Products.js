@@ -1,5 +1,4 @@
-const Products = [
-  {
+const Products = [  {
     id: 101,
     name: "กรีนคอส (Cos Lettuce)",
     imgSrc: [
@@ -39,7 +38,7 @@ const Products = [
   },
   {
     id: 103,
-    name: "บัตเตอร์เฮด (Baby Cos Lettuce)",
+    name: "บัตเตอร์เฮด (Butterhead Lettuce)",
     imgSrc: [
       "https://via.placeholder.com/320x240",
       "https://via.placeholder.com/320x240",
@@ -58,7 +57,7 @@ const Products = [
   },
   {
     id: 104,
-    name: "ฟินเลย์ (Baby Cos Lettuce)",
+    name: "ฟินเลย์ (Frillice Ice Berg Lettuce)",
     imgSrc: [
       "https://via.placeholder.com/320x240",
       "https://via.placeholder.com/320x240",
@@ -77,7 +76,7 @@ const Products = [
   },
   {
     id: 105,
-    name: "กรีนโอ๊ค (Baby Cos Lettuce)",
+    name: "กรีนโอ๊ค (Green Oak Lettuce)",
     imgSrc: [
       "https://via.placeholder.com/320x240",
       "https://via.placeholder.com/320x240",
@@ -96,7 +95,7 @@ const Products = [
   },
   {
     id: 106,
-    name: "เรดโอ๊ค (Baby Cos Lettuce)",
+    name: "เรดโอ๊ค (Red Oak Lettuce)",
     imgSrc: [
       "https://via.placeholder.com/320x240",
       "https://via.placeholder.com/320x240",

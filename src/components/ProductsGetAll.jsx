@@ -1,5 +1,4 @@
-import { Container, Row, Carousel, Col } from "react-bootstrap";
-import Products from "../data/Products";
+import { Container, Row, Carousel, Col } from "react-bootstrap";import Products from "../data/Products";
 import ProductThumbnail from "./ProductThumbnail";
 import ScrollTopButton from "./ScrollTopButton";
 const ProductsGetAll = (props) => {
@@ -28,10 +27,10 @@ const ProductsGetAll = (props) => {
       <div>
         <a href={foundCategory.category.path} className="text-decoration-none">
           <h3 className="d-none d-md-flex text-center text-md-start text-decoration-underline text-secondary">
-            ประเภท: {getCategoryName}
+            {getCategoryName}
           </h3>
           <p className="d-none d-md-flex mb-3 text-secondary  text-center text-md-start">
-            {`(จำนวน ${filteredProducts.length} )`}
+            {`(ประเภท ${foundCategory.category.text}: ${filteredProducts.length} )`}
           </p>
         </a>
 
@@ -50,10 +49,10 @@ const ProductsGetAll = (props) => {
                   className="text-decoration-none"
                   href={products.category.path}>
                   <h4 className="text-start text-secondary mb-0">
-                    ประเภท: {products.category.text}
+                    {products.category.text}
                   </h4>
                   <p className="text-start text-secondary">
-                    {`(จำนวน: ${filteredProducts.length} )`}
+                    {`(ประเภท ${products.category.text}: ${filteredProducts.length} )`}
                   </p>
                 </a>
                 <a
