@@ -1,4 +1,5 @@
-import React from "react";import { Col, Row, Button } from "react-bootstrap";
+import React from "react";
+import { Col, Row, Button } from "react-bootstrap";
 import Articles from "../data/Articles";
 
 const Article = (props) => {
@@ -15,6 +16,10 @@ const Article = (props) => {
           <img
             className="img-fluid text-lg-center pt-md-3"
             src={findArticleByName.img[0]}
+          />
+          <img
+            className="img-fluid text-lg-center pt-md-3"
+            src={findArticleByName.img[1] || null}
           />
         </Col>
         <Col className="mt-3 px-3 px-md-3 d-lg-flex align-items-lg-center">

@@ -59,7 +59,9 @@ const ProductGroup = () => {
                   href={"/product/" + products.id}>
                   <img className="img-fluid" src={products.imgSrc[0]} alt="" />
                   <div className=" align-content-end mt-5 pt-5">
-                    <Carousel.Caption className="  ">
+                    <Carousel.Caption
+                      className="  "
+                      style={{ color: "#4B4952" }}>
                       <h3>{products.name}</h3>
                       <p>{products.description.short}</p>
                     </Carousel.Caption>

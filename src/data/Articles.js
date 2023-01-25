@@ -1,8 +1,8 @@
 const Articles = [  {
     name: "objective",
     img: [
-      "https://via.placeholder.com/640x480.jpg",
-      "https://via.placeholder.com/320x240.jpg",
+      "https://i.postimg.cc/VkSzY7cB/186634580-2925779797688743-1500693295449890509-n-1.jpg",
+      "https://i.postimg.cc/6QhKzTJT/159250710-2876475992619124-4754546742405221435-n.jpg",
     ],
     header: "ใจฟ้าฟาร์ม เกษตรออร์แกนิค",
     short: "",
