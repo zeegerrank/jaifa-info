@@ -40,7 +40,7 @@ const ProductsGetAll = (props) => {
         </Row>
         <Row className="justify-content-md-start justify-content-center d-md-none ">
           <Carousel
-            interval={10000}
+            interval={20000}
             variant="dark"
             className="rounded-2 w-100"
             style={{ backgroundColor: "#D9FFE5" }}>
@@ -59,15 +59,13 @@ const ProductsGetAll = (props) => {
                 <a
                   className=" text-decoration-none"
                   href={"/product/" + products.id}>
-                  <img
-                    className="img-fluid"
-                    src="https://via.placeholder.com/640x480.jpg"
-                    alt=""
-                  />
-                  <Carousel.Caption className=" align-self-end opacity-50">
-                    <h3>{products.name}</h3>
-                    <p>{products.description.short}</p>
-                  </Carousel.Caption>
+                  <img className="img-fluid" src={products.imgSrc[0]} alt="" />
+                  <div className="align-content-end mt-5 pt-5">
+                    <Carousel.Caption className=" ">
+                      <h3>{products.name}</h3>
+                      <p>{products.description.short}</p>
+                    </Carousel.Caption>
+                  </div>
                 </a>
               </Carousel.Item>
             ))}

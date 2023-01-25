@@ -37,7 +37,7 @@ const ProductGroup = () => {
         </Row>
         <Row className="justify-content-md-start justify-content-center d-md-none ">
           <Carousel
-            interval={10000}
+            interval={20000}
             variant="dark"
             className="  rounded-2 w-100 pb-3"
             style={{ backgroundColor: "#D2E8E3" }}>
