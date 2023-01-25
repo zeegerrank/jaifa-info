@@ -134,10 +134,10 @@ const Products = [
   },
   {
     id: 301,
-    name: "ถ่านไฟ อิวาเตะ",
+    name: `ถ่านไฟ อิวาเตะ`,
     imgSrc: [
-      "https://via.placeholder.com/320x240",
-      "https://via.placeholder.com/320x240",
+      "https://i.postimg.cc/ZqSwpsMm/153485.jpg",
+      "https://i.postimg.cc/pTB97Yzb/154767.jpg",
     ],
     imgName: "test",
     category: {
@@ -154,10 +154,10 @@ const Products = [
   },
   {
     id: 302,
-    name: "Iwate Charcoal",
+    name: "น้ำส้มควันไม้",
     imgSrc: [
-      "https://via.placeholder.com/320x240",
-      "https://via.placeholder.com/320x240",
+      "https://i.postimg.cc/3xfJyrQG/153486.jpg",
+      "https://i.postimg.cc/8CFkL8T0/153480.jpg",
     ],
     imgName: "test",
     category: {

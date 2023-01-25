@@ -11,6 +11,7 @@ const ProductDetail = () => {
     Products.find((prod) => prod.id == prodId);
 
   const foundProduct = findProductById(productId);
+  console.log("🚀 -> foundProduct.category.path", foundProduct.category.path);
 
   return (
     <>
@@ -27,7 +28,7 @@ const ProductDetail = () => {
         </div>
 
         <Row className="justify-content-lg-around justify-content-md-center">
-          <Col lg={4} md={6} className="text-center text-md-start text-lg-end">
+          <Col lg={4} md={6} className="text-center ">
             <Col md={12} className="mb-3">
               <img
                 className="img-fluid"
@@ -53,7 +54,7 @@ const ProductDetail = () => {
             <div className="text-center mb-2 text-md-end">
               <Button
                 href={foundProduct.category.path}
-                className=" mx-2"
+                className=" mx-2 mb-md-1 mb-lg-0"
                 style={{ background: "#4ED647", border: "none" }}>
                 ดู {foundProduct.category.text} ทั้งหมด
               </Button>

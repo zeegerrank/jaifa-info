@@ -73,7 +73,7 @@ const ProductsGetAll = (props) => {
             ))}
           </Carousel>
         </Row>
-        <div className=" text-center">
+        <div className="mt-2 text-center">
           <ScrollTopButton />
         </div>
       </div>

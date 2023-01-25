@@ -2,7 +2,6 @@ import { Carousel, Container, Row, Button, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Products from "../data/Products";
 import ProductThumbnail from "./ProductThumbnail";
-import ScrollTopButton from "../components/ScrollTopButton";
 
 const ProductGroup = () => {
   // Receive param to call in data
@@ -41,32 +40,30 @@ const ProductGroup = () => {
             interval={10000}
             variant="dark"
             className="  rounded-2 w-100 pb-3"
-            style={{ backgroundColor: "#D9FFE5" }}>
+            style={{ backgroundColor: "#D2E8E3" }}>
             {filteredProducts.map((products) => (
               <Carousel.Item
                 className="text-center mt-2
               "
                 key={products.id}>
-                <div className=" mx-2">
+                <div className=" ">
                   <h4 className="text-start text-secondary mb-0">
                     ประเภท: {products.category.text}
                   </h4>
                   <p className="text-start text-secondary">
-                    {`(จำนวน: ${filteredProducts.length} )`}
+                    {`(สินค้า ${products.category.text}: ${filteredProducts.length} )`}
                   </p>
                 </div>
                 <a
                   className=" text-decoration-none"
                   href={"/product/" + products.id}>
-                  <img
-                    className="img-fluid"
-                    src="https://via.placeholder.com/640x480.jpg"
-                    alt=""
-                  />
-                  <Carousel.Caption className=" align-self-end opacity-50">
-                    <h3>{products.name}</h3>
-                    <p>{products.description.short}</p>
-                  </Carousel.Caption>
+                  <img className="img-fluid" src={products.imgSrc[0]} alt="" />
+                  <div className=" align-content-end mt-5 pt-5">
+                    <Carousel.Caption className="  ">
+                      <h3>{products.name}</h3>
+                      <p>{products.description.short}</p>
+                    </Carousel.Caption>
+                  </div>
                 </a>
               </Carousel.Item>
             ))}
