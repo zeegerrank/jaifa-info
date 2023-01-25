@@ -173,10 +173,10 @@ const Products = [
   },
   {
     id: 401,
-    name: "Iwate Charcoal",
+    name: "ปุ๋ยมูลไส้เดือน",
     imgSrc: [
-      "https://via.placeholder.com/320x240",
-      "https://via.placeholder.com/320x240",
+      "https://i.postimg.cc/hGHyMYdj/153483.jpg",
+      "https://i.postimg.cc/CKZrG0dX/153487.jpg",
     ],
     imgName: "test",
     category: {
